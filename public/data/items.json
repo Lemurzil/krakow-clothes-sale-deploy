@@ -1,0 +1,418 @@
+[
+  {
+    "id": "001",
+    "name": "Beige checkered shirt with a wool blend",
+    "brand": "CROPP",
+    "size": "S",
+    "color": "Beige",
+    "originalPrice": 119.99,
+    "price": 39.99,
+    "condition": "Brand new",
+    "status": "AVAILABLE",
+    "category": "Shirts",
+    "material": "60% polyester, 17% cotton, 10% acrylic, 6% viscose, 4% polyamide, 3% wool",
+    "features": [
+      "Comfort cut",
+      "Button closure",
+      "Classic collar",
+      "Long sleeves with buttoned cuffs",
+      "Chest pocket",
+      "Checkered pattern"
+    ],
+    "images": [
+      "/images/001/221AT-08X-001-1-894551.jpg",
+      "/images/001/221AT-08X-003-1-894551.jpg",
+      "/images/001/221AT-08X-050-1-827665_1.jpg"
+    ],
+    "catalogNumber": "#001"
+  },
+  {
+    "id": "002",
+    "name": "Biker jacket made of eco-leather",
+    "brand": "CROPP",
+    "size": "S",
+    "color": "Black",
+    "originalPrice": 159.99,
+    "price": 69.99,
+    "condition": "Barely used, like brand new",
+    "status": "AVAILABLE",
+    "category": "Jackets",
+    "material": "Outer: 100% polyester; lining: 100% polyurethane; filling: 100% polyester",
+    "features": [
+      "Short cut",
+      "Metal zipper closure",
+      "Turn-down collar",
+      "Inside open pocket",
+      "External zip pockets",
+      "Adjustable bottom strap",
+      "Metal details"
+    ],
+    "images": [
+      "/images/002/820AS-99X-001-1-882387_6.jpg",
+      "/images/002/820AS-99X-002-1-882387_6.jpg",
+      "/images/002/820AS-99X-003-1-882387_6.jpg",
+      "/images/002/820AS-99X-050-1-878114_5.jpg"
+    ],
+    "catalogNumber": "#002"
+  },
+  {
+    "id": "003",
+    "name": "Cotton Black Shirt",
+    "brand": "CROPP",
+    "size": "M",
+    "color": "Black",
+    "originalPrice": 69.99,
+    "price": 29.99,
+    "condition": "Barely used, like brand new",
+    "status": "AVAILABLE",
+    "category": "Shirts",
+    "material": "100% cotton",
+    "features": [
+      "Breathable chambray cotton",
+      "Regular fit",
+      "Full button closure",
+      "Classic collar",
+      "Long sleeves with buttoned cuffs",
+      "Chest patch pocket"
+    ],
+    "images": [
+      "/images/003/216AT-99X-001-1-895292.jpg"
+    ],
+    "catalogNumber": "#003"
+  },
+  {
+    "id": "004",
+    "name": "Cream Mandalorian Star Wars Sweater",
+    "brand": "CROPP",
+    "size": "S",
+    "color": "Cream",
+    "originalPrice": 49.99,
+    "price": 25.99,
+    "condition": "Unused, brand new",
+    "status": "AVAILABLE",
+    "category": "Sweaters",
+    "material": null,
+    "features": [
+      "Mandalorian / Star Wars motif"
+    ],
+    "images": [
+      "/images/004/983AT-01X-050-1-880591_8.jpg"
+    ],
+    "catalogNumber": "#004"
+  },
+  {
+    "id": "005",
+    "name": "Green Mandalorian Star Wars Sweater",
+    "brand": "CROPP",
+    "size": "S",
+    "color": "Green",
+    "originalPrice": 49.99,
+    "price": 25.99,
+    "condition": "Unused, brand new",
+    "status": "AVAILABLE",
+    "category": "Sweaters",
+    "material": null,
+    "features": [
+      "Mandalorian / Star Wars motif"
+    ],
+    "images": [
+      "/images/005/982AT-77X-050-1-873082_8.jpg"
+    ],
+    "catalogNumber": "#005"
+  },
+  {
+    "id": "006",
+    "name": "Harry Potter Sweater",
+    "brand": "CROPP",
+    "size": "S",
+    "color": "Black",
+    "originalPrice": 49.99,
+    "price": 25.99,
+    "condition": "Unused, brand new",
+    "status": "AVAILABLE",
+    "category": "Sweaters",
+    "material": null,
+    "features": [
+      "Harry Potter motif"
+    ],
+    "images": [
+      "/images/006/980AT-99X-050-1-880589_7.jpg"
+    ],
+    "catalogNumber": "#006"
+  },
+  {
+    "id": "007",
+    "name": "Red Star Wars Sweater",
+    "brand": "CROPP",
+    "size": "S",
+    "color": "Red",
+    "originalPrice": 49.99,
+    "price": 25.99,
+    "condition": "Unused, brand new",
+    "status": "AVAILABLE",
+    "category": "Sweaters",
+    "material": null,
+    "features": [
+      "Star Wars motif"
+    ],
+    "images": [
+      "/images/007/984AT-33X-050-1-880592_6.jpg"
+    ],
+    "catalogNumber": "#007"
+  },
+  {
+    "id": "008",
+    "name": "Sneakers with leather elements, brown and white",
+    "brand": "CROPP",
+    "size": "42 EU",
+    "color": "Brown / White",
+    "originalPrice": 199.99,
+    "price": 69.99,
+    "condition": "Medium use",
+    "status": "AVAILABLE",
+    "category": "Shoes",
+    "material": "Upper: 60% polyurethane, 40% polyester; lining: 100% polyester; sole/filling: 60% phylon, 40% TPR",
+    "features": [
+      "Mesh and imitation-leather upper",
+      "Two-tone sole",
+      "Flat black laces",
+      "Heel and toe cushioning",
+      "Reinforced toe",
+      "Pull tab"
+    ],
+    "images": [
+      "/images/008/095AV-90X-001-1-863559.jpg",
+      "/images/008/095AV-90X-002-1-863559.jpg",
+      "/images/008/095AV-90X-003-1-863559.jpg",
+      "/images/008/095AV-90X-004-1-863559.jpg",
+      "/images/008/095AV-90X-005-1-863559.jpg",
+      "/images/008/095AV-90X-006-1-863559.jpg"
+    ],
+    "catalogNumber": "#008"
+  },
+  {
+    "id": "009",
+    "name": "T-Shirt with a parrot motif",
+    "brand": "CROPP",
+    "size": "XS",
+    "color": "Cream",
+    "originalPrice": 49.99,
+    "price": 24.99,
+    "condition": "Barely used, like brand new",
+    "status": "AVAILABLE",
+    "category": "T-Shirts",
+    "material": "100% cotton",
+    "features": [
+      "Comfort cut",
+      "Short loose sleeves",
+      "Parrot-with-smartphones front print"
+    ],
+    "images": [
+      "/images/009/707AT-01X-001-1-826123_3.jpg",
+      "/images/009/707AT-01X-050-1-821463_7.jpg"
+    ],
+    "catalogNumber": "#009"
+  },
+  {
+    "id": "010",
+    "name": "Tiger Baseball Corduroy Cap",
+    "brand": "CROPP",
+    "size": "Universal",
+    "color": "Brown",
+    "originalPrice": null,
+    "price": 29.99,
+    "condition": null,
+    "status": "AVAILABLE",
+    "category": "Accessories",
+    "material": null,
+    "features": [
+      "Corduroy baseball cap",
+      "Tiger motif"
+    ],
+    "images": [
+      "/images/010/930AU-89X-001-1-837962_2.jpg"
+    ],
+    "catalogNumber": "#010"
+  },
+  {
+    "id": "011",
+    "name": "Denim Jacket with Faux Fur Collar",
+    "brand": "Pull&Bear",
+    "size": "M",
+    "color": "Blue",
+    "originalPrice": 129.99,
+    "price": 39.99,
+    "condition": "Almost never used, like brand new",
+    "status": "AVAILABLE",
+    "category": "Jackets",
+    "material": null,
+    "features": [
+      "Denim jacket",
+      "Faux fur collar"
+    ],
+    "images": [
+      "/images/011/07711526400-M.jpg",
+      "/images/011/7711526400_2_1_1.jpg"
+    ],
+    "catalogNumber": "#011"
+  },
+  {
+    "id": "012",
+    "name": "Biker jacket with stand-up collar",
+    "brand": "Reserved",
+    "size": "S",
+    "color": "Navy blue",
+    "originalPrice": 179.99,
+    "price": 79.99,
+    "condition": "Rarely used, looks fresh/new",
+    "status": "AVAILABLE",
+    "category": "Jackets",
+    "material": "100% polyester outer, padding and lining",
+    "features": [
+      "Low stand-up collar with snap fastening",
+      "Zip fastening",
+      "Long sleeves",
+      "Inside pocket"
+    ],
+    "images": [
+      "/images/012/9070Z-59X-001-1-819054_2.jpg",
+      "/images/012/9070Z-59X-003-1-819054_2.jpg",
+      "/images/012/9070Z-59X-004-1-819054_2.jpg",
+      "/images/012/9070Z-59X-010-1-803695_3.jpg",
+      "/images/012/9070Z-59X-011-1-803695_3.jpg"
+    ],
+    "catalogNumber": "#012"
+  },
+  {
+    "id": "013",
+    "name": "Blue Rain Quilted Jacket",
+    "brand": "Reserved",
+    "size": "M",
+    "color": "Navy blue",
+    "originalPrice": 129.99,
+    "price": 49.99,
+    "condition": "Lightly used",
+    "status": "AVAILABLE",
+    "category": "Jackets",
+    "material": "100% polyester",
+    "features": [
+      "Low stand-up collar",
+      "Snap fastening",
+      "Long sleeves",
+      "Inside pocket"
+    ],
+    "images": [
+      "/images/013/2109W-59X-001-1-737435_3.jpg",
+      "/images/013/2109W-59X-002-1-737435_3.jpg",
+      "/images/013/2109W-59X-004-1-737435_3.jpg",
+      "/images/013/2109W-59X-010-1-736092_5.jpg"
+    ],
+    "catalogNumber": "#013"
+  },
+  {
+    "id": "014",
+    "name": "Comfort fit patterned shirt",
+    "brand": "Reserved",
+    "size": "S",
+    "color": "Black / Brown / Cream",
+    "originalPrice": 89.99,
+    "price": 29.99,
+    "condition": "Barely used, looks fresh/new",
+    "status": "AVAILABLE",
+    "category": "Shirts",
+    "material": "95% polyester, 5% elastane",
+    "features": [
+      "Open collar",
+      "Short sleeves",
+      "Contrasting button fastening",
+      "All-over pattern"
+    ],
+    "images": [
+      "/images/014/YW087-90X-003-1-869059_1.jpg",
+      "/images/014/YW087-90X-004-1-869059_1.jpg",
+      "/images/014/YW087-90X-010-1-851059_6.jpg",
+      "/images/014/YW087-90X-011-1-851059_6.jpg"
+    ],
+    "catalogNumber": "#014"
+  },
+  {
+    "id": "015",
+    "name": "Corduroy jacket with hood",
+    "brand": "Reserved",
+    "size": "M",
+    "color": "Black / Charcoal",
+    "originalPrice": 199.99,
+    "price": 59.99,
+    "condition": "Completely unused, brand new",
+    "status": "AVAILABLE",
+    "category": "Jackets",
+    "material": "100% polyester",
+    "features": [
+      "Straight cut",
+      "Corduroy fabric",
+      "Classic collar",
+      "Large hood",
+      "Zip and press-stud fastening",
+      "Two side pockets"
+    ],
+    "images": [
+      "/images/015/821CC-95X-001-1-891495_5.jpg",
+      "/images/015/821CC-95X-004-1-891495_5.jpg",
+      "/images/015/821CC-95X-010-1-901030_3.jpg",
+      "/images/015/821CC-95X-011-1-901030_3.jpg"
+    ],
+    "catalogNumber": "#015"
+  },
+  {
+    "id": "016",
+    "name": "Denim jacket with stitching",
+    "brand": "Reserved",
+    "size": "S",
+    "color": "Dark blue / Indigo",
+    "originalPrice": 129.99,
+    "price": 49.99,
+    "condition": "Lightly used",
+    "status": "AVAILABLE",
+    "category": "Jackets",
+    "material": "100% cotton",
+    "features": [
+      "Relaxed design",
+      "Corduroy contrasting collar",
+      "Zip fastening",
+      "Decorative stitching",
+      "Outer pockets"
+    ],
+    "images": [
+      "/images/016/417BB-95J-002-1-892226_1.jpg",
+      "/images/016/417BB-95J-010-1-877503_4.jpg"
+    ],
+    "catalogNumber": "#016"
+  },
+  {
+    "id": "017",
+    "name": "Quilted jacket with stand-up collar",
+    "brand": "Reserved",
+    "size": "S",
+    "color": "Black",
+    "originalPrice": 179.99,
+    "price": 79.99,
+    "condition": "Rarely used, looks fresh/new",
+    "status": "AVAILABLE",
+    "category": "Jackets",
+    "material": "Fabric I/III: 100% polyamide; Fabric II: 100% polyester",
+    "features": [
+      "Low stand-up collar with snap fastening",
+      "Zip fastening",
+      "Two side pockets",
+      "Fastened chest pocket"
+    ],
+    "images": [
+      "/images/017/349CV-99X-001-1-908910_1.jpg",
+      "/images/017/349CV-99X-002-1-908910_1.jpg",
+      "/images/017/349CV-99X-004-1-908910_1.jpg",
+      "/images/017/349CV-99X-010-1-906489_8.jpg",
+      "/images/017/349CV-99X-011-1-906489_8.jpg"
+    ],
+    "catalogNumber": "#017"
+  }
+]
