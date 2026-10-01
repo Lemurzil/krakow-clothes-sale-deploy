@@ -70,31 +70,45 @@ body{overflow-x:hidden}.card{min-width:0}.meta{white-space:nowrap;overflow:hidde
   .hero-summary{font-size:13px;margin-top:9px}
 }
 
-
-/* Subtle diagonal background bands — decorative only, kept behind the original storefront */
+/* Continuous diagonal background bands */
 body{
-  background-color:var(--paper);
-  background-image:
-    linear-gradient(126deg,
-      transparent 0 62%,
-      rgba(118,36,31,.11) 62% 67%,
-      transparent 67% 71%,
-      rgba(185,75,47,.065) 71% 75%,
-      transparent 75% 100%),
-    linear-gradient(128deg,
-      transparent 0 20%,
-      rgba(118,36,31,.07) 20% 24%,
-      transparent 24% 28%,
-      rgba(185,75,47,.045) 28% 32%,
-      transparent 32% 100%);
-  background-repeat:no-repeat;
-  background-size:760px 560px,650px 500px;
-  background-position:right -130px top 90px,left -190px bottom 120px;
-  background-attachment:fixed;
+  position:relative;
+  overflow-x:hidden;
+  background:var(--paper);
+}
+body::before{
+  content:"";
+  position:fixed;
+  inset:-45vh -45vw;
+  pointer-events:none;
+  z-index:0;
+  background:
+    repeating-linear-gradient(
+      128deg,
+      transparent 0 190px,
+      rgba(126,42,35,.085) 190px 218px,
+      transparent 218px 254px,
+      rgba(185,75,47,.05) 254px 269px,
+      transparent 269px 455px
+    );
+}
+.site-header,
+main,
+footer{
+  position:relative;
+  z-index:1;
 }
 @media(max-width:520px){
-  body{
-    background-size:500px 390px,440px 360px;
-    background-position:right -190px top 100px,left -210px bottom 80px;
+  body::before{
+    inset:-35vh -70vw;
+    background:
+      repeating-linear-gradient(
+        128deg,
+        transparent 0 150px,
+        rgba(126,42,35,.075) 150px 171px,
+        transparent 171px 199px,
+        rgba(185,75,47,.045) 199px 211px,
+        transparent 211px 360px
+      );
   }
 }
