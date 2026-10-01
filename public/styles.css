@@ -63,19 +63,36 @@ body{overflow-x:hidden}.card{min-width:0}.meta{white-space:nowrap;overflow:hidde
   .hero.compact-original-hero h1{font-size:42px}
 }
 
-/* Clean fashion color wash — no stripes or repeating pattern */
+.hero-summary{
+  margin:10px 0 0;
+  color:var(--muted);
+  font-size:15px;
+  line-height:1.4;
+}
+
+/* Visible editorial fashion color wash — soft, asymmetric, no stripes */
 body{
   position:relative;
   overflow-x:hidden;
   background:
-    radial-gradient(ellipse 54% 38% at 96% 8%, rgba(126,42,35,.115) 0%, rgba(126,42,35,.055) 38%, transparent 72%),
-    radial-gradient(ellipse 46% 34% at 4% 88%, rgba(185,75,47,.085) 0%, rgba(185,75,47,.035) 42%, transparent 74%),
-    radial-gradient(ellipse 34% 24% at 68% 58%, rgba(154,72,64,.045) 0%, transparent 76%),
-    var(--paper);
+    radial-gradient(circle at 94% 9%,
+      rgba(116,36,39,.22) 0%,
+      rgba(145,52,55,.16) 15%,
+      rgba(177,89,77,.09) 30%,
+      transparent 48%),
+    radial-gradient(circle at 2% 82%,
+      rgba(185,75,47,.16) 0%,
+      rgba(194,104,78,.10) 18%,
+      rgba(211,151,125,.055) 34%,
+      transparent 50%),
+    linear-gradient(135deg,
+      rgba(244,240,232,1) 0%,
+      rgba(247,238,233,1) 58%,
+      rgba(244,240,232,1) 100%);
   background-attachment:fixed;
 }
 .site-header{
-  background:rgba(244,240,232,.88);
+  background:rgba(244,240,232,.84);
 }
 .hero.compact-original-hero{
   padding-bottom:24px;
@@ -88,10 +105,20 @@ body{
 }
 
 @media(max-width:520px){
+  .hero-summary{
+    font-size:13px;
+    margin-top:8px;
+  }
   body{
     background:
-      radial-gradient(ellipse 90% 30% at 108% 4%, rgba(126,42,35,.105) 0%, rgba(126,42,35,.04) 44%, transparent 74%),
-      radial-gradient(ellipse 85% 26% at -10% 82%, rgba(185,75,47,.075) 0%, rgba(185,75,47,.025) 45%, transparent 76%),
+      radial-gradient(circle at 110% 6%,
+        rgba(116,36,39,.20) 0%,
+        rgba(145,52,55,.13) 18%,
+        transparent 48%),
+      radial-gradient(circle at -12% 84%,
+        rgba(185,75,47,.14) 0%,
+        rgba(194,104,78,.08) 22%,
+        transparent 52%),
       var(--paper);
     background-attachment:fixed;
   }

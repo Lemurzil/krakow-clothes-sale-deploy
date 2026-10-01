@@ -2,6 +2,7 @@ const grid=document.querySelector('#grid');
 const searchInput=document.querySelector('#searchInput');
 const categoryChips=document.querySelector('#categoryChips');
 const resultCount=document.querySelector('#resultCount');
+const summaryLine=document.querySelector('#summaryLine');
 const dialog=document.querySelector('#itemDialog');
 const dialogContent=document.querySelector('#dialogContent');
 const closeDialog=document.querySelector('#closeDialog');
@@ -30,10 +31,15 @@ async function init(){
       i.condition,i.material,...(i.features||[]),categoryAliases[i.category]||''
     ].join(' '));
   });
+  renderSummary();
   renderCategoryChips();
   render();
 }
 
+function renderSummary(){
+  const available=items.filter(i=>i.status==='AVAILABLE').length;
+  summaryLine.textContent=available+' available \u00b7 '+items.length+' total \u00b7 prices in PLN \u00b7 scroll or search by name / number';
+}
 function renderCategoryChips(){
   const cats=[...new Set(items.map(i=>i.category))].sort();
   const choices=[['ALL','All'],...cats.map(c=>[c,c])];
@@ -43,7 +49,8 @@ function renderCategoryChips(){
   categoryChips.querySelectorAll('.category-chip').forEach(btn=>{
     btn.addEventListener('click',()=>{
       activeCategory=btn.dataset.category;
-      renderCategoryChips();
+      renderSummary();
+  renderCategoryChips();
       render();
     });
   });
