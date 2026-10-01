@@ -2,7 +2,6 @@ const grid=document.querySelector('#grid');
 const searchInput=document.querySelector('#searchInput');
 const categoryChips=document.querySelector('#categoryChips');
 const resultCount=document.querySelector('#resultCount');
-const summaryLine=document.querySelector('#summaryLine');
 const dialog=document.querySelector('#itemDialog');
 const dialogContent=document.querySelector('#dialogContent');
 const closeDialog=document.querySelector('#closeDialog');
@@ -10,7 +9,7 @@ const closeDialog=document.querySelector('#closeDialog');
 let items=[];
 let activeCategory='ALL';
 
-const money=n=>Number(n).toFixed(2)+' zł';
+const money=n=>Number(n).toFixed(2)+' z\u0142';
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[c]));
 const norm=s=>String(s??'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().trim();
 
@@ -31,14 +30,8 @@ async function init(){
       i.condition,i.material,...(i.features||[]),categoryAliases[i.category]||''
     ].join(' '));
   });
-  renderSummary();
   renderCategoryChips();
   render();
-}
-
-function renderSummary(){
-  const available=items.filter(i=>i.status==='AVAILABLE').length;
-  summaryLine.textContent=available+' available · '+items.length+' total · prices in PLN · scroll or search by name / number';
 }
 
 function renderCategoryChips(){
@@ -77,7 +70,7 @@ function card(i){
   return '<article class="card" data-id="'+i.id+'">'+
     '<div class="photo"><img src="'+i.images[0]+'" alt="'+esc(i.name)+'" loading="lazy">'+
     '<span class="badge '+i.status.toLowerCase()+'">'+i.status+'</span></div>'+
-    '<div class="card-body"><div class="meta">'+i.catalogNumber+' · '+esc(i.category)+' · SIZE '+esc(i.size)+'</div>'+
+    '<div class="card-body"><div class="meta">'+i.catalogNumber+' \u00b7 '+esc(i.category)+' \u00b7 SIZE '+esc(i.size)+'</div>'+
     '<h3>'+esc(i.name)+'</h3><div class="price-row"><span class="price">'+money(i.price)+'</span>'+
     (i.originalPrice?'<span class="old">'+money(i.originalPrice)+'</span>':'')+'</div></div></article>';
 }
@@ -92,7 +85,7 @@ function openItem(iid){
   const factHtml=facts.map(f=>'<div class="fact"><span>'+esc(f[0])+'</span><strong>'+esc(f[1])+'</strong></div>').join('');
   const featureHtml=i.features&&i.features.length?'<ul class="features">'+i.features.map(x=>'<li>'+esc(x)+'</li>').join('')+'</ul>':'';
   dialogContent.innerHTML='<div class="detail"><div class="gallery">'+gallery+'</div><div class="info">'+
-    '<div class="detail-id">'+i.catalogNumber+' · '+esc(i.category)+'</div><h2>'+esc(i.name)+'</h2>'+
+    '<div class="detail-id">'+i.catalogNumber+' \u00b7 '+esc(i.category)+'</div><h2>'+esc(i.name)+'</h2>'+
     '<div class="big-price">'+money(i.price)+(i.originalPrice?' <span class="old">'+money(i.originalPrice)+'</span>':'')+'</div>'+
     '<div class="fact-list">'+factHtml+'</div>'+featureHtml+
     '<button class="share" id="shareItem">Share / copy item</button></div></div>';
@@ -101,7 +94,7 @@ function openItem(iid){
 }
 
 async function shareItem(i){
-  const text=i.catalogNumber+' — '+i.name+', size '+i.size+', '+money(i.price)+' · Kraków';
+  const text=i.catalogNumber+' \u2014 '+i.name+', size '+i.size+', '+money(i.price)+' \u00b7 Krakow';
   if(navigator.share){try{await navigator.share({title:i.name,text,url:location.href});return}catch(e){}}
   await navigator.clipboard.writeText(text+' '+location.href);
   const b=document.querySelector('#shareItem');

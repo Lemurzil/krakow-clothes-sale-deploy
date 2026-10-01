@@ -57,58 +57,45 @@ body{overflow-x:hidden}.card{min-width:0}.meta{white-space:nowrap;overflow:hidde
   letter-spacing:-.05em;
   max-width:none;
 }
-.hero-summary{
-  margin:12px 0 0;
-  color:var(--muted);
-  font-size:15px;
-  line-height:1.45;
-}
 
 @media(max-width:520px){
   .hero.compact-original-hero{padding:28px 18px 24px}
   .hero.compact-original-hero h1{font-size:42px}
-  .hero-summary{font-size:13px;margin-top:9px}
 }
 
-/* Continuous diagonal background bands */
+/* Clean fashion color wash — no stripes or repeating pattern */
 body{
   position:relative;
   overflow-x:hidden;
-  background:var(--paper);
-}
-body::before{
-  content:"";
-  position:fixed;
-  inset:-45vh -45vw;
-  pointer-events:none;
-  z-index:0;
   background:
-    repeating-linear-gradient(
-      128deg,
-      transparent 0 190px,
-      rgba(126,42,35,.085) 190px 218px,
-      transparent 218px 254px,
-      rgba(185,75,47,.05) 254px 269px,
-      transparent 269px 455px
-    );
+    radial-gradient(ellipse 54% 38% at 96% 8%, rgba(126,42,35,.115) 0%, rgba(126,42,35,.055) 38%, transparent 72%),
+    radial-gradient(ellipse 46% 34% at 4% 88%, rgba(185,75,47,.085) 0%, rgba(185,75,47,.035) 42%, transparent 74%),
+    radial-gradient(ellipse 34% 24% at 68% 58%, rgba(154,72,64,.045) 0%, transparent 76%),
+    var(--paper);
+  background-attachment:fixed;
 }
-.site-header,
-main,
-footer{
-  position:relative;
-  z-index:1;
+.site-header{
+  background:rgba(244,240,232,.88);
 }
+.hero.compact-original-hero{
+  padding-bottom:24px;
+}
+.compact-catalog{
+  padding-top:0;
+}
+.compact-catalog .catalog-tools{
+  margin-top:0;
+}
+
 @media(max-width:520px){
-  body::before{
-    inset:-35vh -70vw;
+  body{
     background:
-      repeating-linear-gradient(
-        128deg,
-        transparent 0 150px,
-        rgba(126,42,35,.075) 150px 171px,
-        transparent 171px 199px,
-        rgba(185,75,47,.045) 199px 211px,
-        transparent 211px 360px
-      );
+      radial-gradient(ellipse 90% 30% at 108% 4%, rgba(126,42,35,.105) 0%, rgba(126,42,35,.04) 44%, transparent 74%),
+      radial-gradient(ellipse 85% 26% at -10% 82%, rgba(185,75,47,.075) 0%, rgba(185,75,47,.025) 45%, transparent 76%),
+      var(--paper);
+    background-attachment:fixed;
+  }
+  .hero.compact-original-hero{
+    padding-bottom:18px;
   }
 }
