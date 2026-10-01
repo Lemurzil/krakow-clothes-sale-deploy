@@ -1,19 +1,33 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="theme-color" content="#f4f0e8"><meta name="description" content="Clothes for sale in Kraków. Browse current availability, sizes and prices.">
-<title>Kraków Clothes Sale</title><link rel="stylesheet" href="/styles.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#f5f3ef">
+  <meta name="description" content="Clothes for sale in Kraków. Search by item, brand or catalog number.">
+  <title>Kraków Clothes Sale</title>
+  <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
-<header class="site-header"><a class="brand" href="/">KRAKÓW <span>CLOSET</span></a><div class="pickup">Local pickup · Kraków</div></header>
-<main>
-<section class="hero"><p class="eyebrow">PERSONAL CLOSET SALE · KRAKÓW</p><h1>Good clothes.<br><em>Fair prices.</em></h1>
-<p class="hero-copy">Everything here is from my own wardrobe. Message me with the item number if you want something.</p><div class="stats" id="stats"></div></section>
-<section class="catalog"><div class="catalog-head"><div><p class="eyebrow">THE COLLECTION</p><h2>Shop the closet</h2></div>
-<div class="controls"><select id="statusFilter"><option value="ALL">All items</option><option value="AVAILABLE">Available</option><option value="RESERVED">Reserved</option><option value="SOLD">Sold</option></select>
-<select id="categoryFilter"><option value="ALL">All categories</option></select></div></div><div class="grid" id="grid"></div></section>
-</main>
-<dialog id="itemDialog"><button class="close" id="closeDialog" aria-label="Close">×</button><div id="dialogContent"></div></dialog>
-<footer>Private clothes sale · Kraków, Poland · Prices in PLN</footer><script src="/app.js" defer></script>
-</body></html>
+  <main>
+    <section class="shop-head">
+      <div class="title-row">
+        <div><h1>Kraków Clothes Sale</h1><p id="summaryLine">Loading clothes…</p></div>
+        <div class="top-count" id="topCount"></div>
+      </div>
+      <label class="search-box">
+        <span aria-hidden="true">⌕</span>
+        <input id="searchInput" type="search" autocomplete="off" placeholder="Search: jacket, sweater, CROPP, #012…" aria-label="Search clothes">
+      </label>
+      <div class="filter-row" id="categoryChips" aria-label="Filter by category"></div>
+    </section>
+    <section class="catalog">
+      <div class="results-head"><h2 id="resultsTitle">Available</h2><span id="resultCount"></span></div>
+      <div class="grid" id="grid"></div>
+    </section>
+  </main>
+  <dialog id="itemDialog"><button class="close" id="closeDialog" aria-label="Close">×</button><div id="dialogContent"></div></dialog>
+  <footer>Private clothes sale · Kraków · Prices in PLN</footer>
+  <script src="/app.js" defer></script>
+</body>
+</html>
