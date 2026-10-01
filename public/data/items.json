@@ -2,7 +2,6 @@
   {
     "id": "001",
     "name": "Beige checkered shirt with a wool blend",
-    "brand": "CROPP",
     "size": "S",
     "color": "Beige",
     "originalPrice": 119.99,
@@ -29,7 +28,6 @@
   {
     "id": "002",
     "name": "Biker jacket made of eco-leather",
-    "brand": "CROPP",
     "size": "S",
     "color": "Black",
     "originalPrice": 159.99,
@@ -58,7 +56,6 @@
   {
     "id": "003",
     "name": "Cotton Black Shirt",
-    "brand": "CROPP",
     "size": "M",
     "color": "Black",
     "originalPrice": 69.99,
@@ -83,7 +80,6 @@
   {
     "id": "004",
     "name": "Cream Mandalorian Star Wars Sweater",
-    "brand": "CROPP",
     "size": "S",
     "color": "Cream",
     "originalPrice": 49.99,
@@ -103,7 +99,6 @@
   {
     "id": "005",
     "name": "Green Mandalorian Star Wars Sweater",
-    "brand": "CROPP",
     "size": "S",
     "color": "Green",
     "originalPrice": 49.99,
@@ -123,7 +118,6 @@
   {
     "id": "006",
     "name": "Harry Potter Sweater",
-    "brand": "CROPP",
     "size": "S",
     "color": "Black",
     "originalPrice": 49.99,
@@ -143,7 +137,6 @@
   {
     "id": "007",
     "name": "Red Star Wars Sweater",
-    "brand": "CROPP",
     "size": "S",
     "color": "Red",
     "originalPrice": 49.99,
@@ -163,7 +156,6 @@
   {
     "id": "008",
     "name": "Sneakers with leather elements, brown and white",
-    "brand": "CROPP",
     "size": "42 EU",
     "color": "Brown / White",
     "originalPrice": 199.99,
@@ -193,7 +185,6 @@
   {
     "id": "009",
     "name": "T-Shirt with a parrot motif",
-    "brand": "CROPP",
     "size": "XS",
     "color": "Cream",
     "originalPrice": 49.99,
@@ -214,30 +205,8 @@
     "catalogNumber": "#009"
   },
   {
-    "id": "010",
-    "name": "Tiger Baseball Corduroy Cap",
-    "brand": "CROPP",
-    "size": "Universal",
-    "color": "Brown",
-    "originalPrice": null,
-    "price": 29.99,
-    "condition": null,
-    "status": "AVAILABLE",
-    "category": "Accessories",
-    "material": null,
-    "features": [
-      "Corduroy baseball cap",
-      "Tiger motif"
-    ],
-    "images": [
-      "/images/010/930AU-89X-001-1-837962_2.jpg"
-    ],
-    "catalogNumber": "#010"
-  },
-  {
     "id": "011",
     "name": "Denim Jacket with Faux Fur Collar",
-    "brand": "Pull&Bear",
     "size": "M",
     "color": "Blue",
     "originalPrice": 129.99,
@@ -259,7 +228,6 @@
   {
     "id": "012",
     "name": "Biker jacket with stand-up collar",
-    "brand": "Reserved",
     "size": "S",
     "color": "Navy blue",
     "originalPrice": 179.99,
@@ -286,7 +254,6 @@
   {
     "id": "013",
     "name": "Blue Rain Quilted Jacket",
-    "brand": "Reserved",
     "size": "M",
     "color": "Navy blue",
     "originalPrice": 129.99,
@@ -312,7 +279,6 @@
   {
     "id": "014",
     "name": "Comfort fit patterned shirt",
-    "brand": "Reserved",
     "size": "S",
     "color": "Black / Brown / Cream",
     "originalPrice": 89.99,
@@ -338,7 +304,6 @@
   {
     "id": "015",
     "name": "Corduroy jacket with hood",
-    "brand": "Reserved",
     "size": "M",
     "color": "Black / Charcoal",
     "originalPrice": 199.99,
@@ -366,7 +331,6 @@
   {
     "id": "016",
     "name": "Denim jacket with stitching",
-    "brand": "Reserved",
     "size": "S",
     "color": "Dark blue / Indigo",
     "originalPrice": 129.99,
@@ -391,7 +355,6 @@
   {
     "id": "017",
     "name": "Quilted jacket with stand-up collar",
-    "brand": "Reserved",
     "size": "S",
     "color": "Black",
     "originalPrice": 179.99,

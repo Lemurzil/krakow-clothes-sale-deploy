@@ -27,7 +27,7 @@ async function init(){
   items=await fetch('/data/items.json').then(r=>r.json());
   items.forEach(i=>{
     i._search=norm([
-      i.id,i.catalogNumber,i.name,i.brand,i.size,i.color,i.category,
+      i.id,i.catalogNumber,i.name,i.size,i.color,i.category,
       i.condition,i.material,...(i.features||[]),categoryAliases[i.category]||''
     ].join(' '));
   });
@@ -77,7 +77,7 @@ function card(i){
   return '<article class="card" data-id="'+i.id+'">'+
     '<div class="photo"><img src="'+i.images[0]+'" alt="'+esc(i.name)+'" loading="lazy">'+
     '<span class="badge '+i.status.toLowerCase()+'">'+i.status+'</span></div>'+
-    '<div class="card-body"><div class="meta">'+i.catalogNumber+' · '+esc(i.brand||i.category)+' · SIZE '+esc(i.size)+'</div>'+
+    '<div class="card-body"><div class="meta">'+i.catalogNumber+' · '+esc(i.category)+' · SIZE '+esc(i.size)+'</div>'+
     '<h3>'+esc(i.name)+'</h3><div class="price-row"><span class="price">'+money(i.price)+'</span>'+
     (i.originalPrice?'<span class="old">'+money(i.originalPrice)+'</span>':'')+'</div></div></article>';
 }
@@ -85,7 +85,7 @@ function card(i){
 function openItem(iid){
   const i=items.find(x=>x.id===iid); if(!i)return;
   const facts=[
-    ['Status',i.status],['Brand',i.brand],['Size',i.size],['Colour',i.color],
+    ['Status',i.status],['Size',i.size],['Colour',i.color],
     ['Condition',i.condition],['Material',i.material]
   ].filter(x=>x[1]);
   const gallery=i.images.map((x,n)=>'<img src="'+x+'" alt="'+esc(i.name)+' photo '+(n+1)+'">').join('');
@@ -102,7 +102,7 @@ function openItem(iid){
 
 async function shareItem(i){
   const text=i.catalogNumber+' — '+i.name+', size '+i.size+', '+money(i.price)+' · Kraków';
-  if(navigator.share){try{await navigator.share({title:i.name,text:text,url:location.href});return}catch(e){}}
+  if(navigator.share){try{await navigator.share({title:i.name,text,url:location.href});return}catch(e){}}
   await navigator.clipboard.writeText(text+' '+location.href);
   const b=document.querySelector('#shareItem');
   b.textContent='Copied';
