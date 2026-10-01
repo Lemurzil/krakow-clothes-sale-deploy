@@ -2,29 +2,30 @@
 <html lang="en">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="theme-color" content="#f4f0e8"><meta name="description" content="Items for sale in Krakow. Search by name or catalog number.">
-<title>Krakow Items Sale</title><link rel="stylesheet" href="/styles.css">
+<meta name="theme-color" content="#f4f0e8"><meta name="description" content="Clothes for sale in Kraków. Browse current availability, sizes and prices.">
+<title>Kraków Clothes Sale</title><link rel="stylesheet" href="/styles.css">
 </head>
 <body>
+<header class="site-header"><a class="brand" href="/">KRAKÓW <span>CLOSET</span></a><div class="pickup">Local pickup · Kraków</div></header>
 <main>
-<section class="compact-hero">
+<section class="hero compact-original-hero">
   <h1>Krakow Items Sale</h1>
-  <p id="summaryLine">Loading items…</p>
+  <p class="hero-summary" id="summaryLine">Loading items…</p>
 </section>
-<section class="catalog compact-catalog">
+<section class="catalog">
+  <div class="catalog-head">
+    <div><p class="eyebrow">THE COLLECTION</p><h2>Shop the closet</h2></div>
+  </div>
   <div class="catalog-tools">
     <div class="search-row">
-      <input id="searchInput" type="search" autocomplete="off" placeholder="Search: jacket, sweater, CROPP, #012..." aria-label="Search items">
+      <input id="searchInput" type="search" autocomplete="off" placeholder="Search: jacket, sweater, CROPP, #012..." aria-label="Search clothes">
+      <span id="resultCount"></span>
     </div>
     <div class="category-chips" id="categoryChips" aria-label="Quick category filters"></div>
-  </div>
-  <div class="results-head">
-    <h2>Available</h2>
-    <span id="resultCount"></span>
   </div>
   <div class="grid" id="grid"></div>
 </section>
 </main>
 <dialog id="itemDialog"><button class="close" id="closeDialog" aria-label="Close">×</button><div id="dialogContent"></div></dialog>
-<footer>Private sale · Kraków, Poland · Prices in PLN</footer><script src="/app.js" defer></script>
+<footer>Private clothes sale · Kraków, Poland · Prices in PLN</footer><script src="/app.js" defer></script>
 </body></html>

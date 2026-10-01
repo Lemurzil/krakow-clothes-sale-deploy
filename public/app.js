@@ -3,7 +3,6 @@ const searchInput=document.querySelector('#searchInput');
 const categoryChips=document.querySelector('#categoryChips');
 const resultCount=document.querySelector('#resultCount');
 const summaryLine=document.querySelector('#summaryLine');
-const resultsHeading=document.querySelector('.results-head h2');
 const dialog=document.querySelector('#itemDialog');
 const dialogContent=document.querySelector('#dialogContent');
 const closeDialog=document.querySelector('#closeDialog');
@@ -29,7 +28,7 @@ async function init(){
   items.forEach(i=>{
     i._search=norm([
       i.id,i.catalogNumber,i.name,i.brand,i.size,i.color,i.category,
-      i.condition,i.material,i.status,...(i.features||[]),categoryAliases[i.category]||''
+      i.condition,i.material,...(i.features||[]),categoryAliases[i.category]||''
     ].join(' '));
   });
   renderSummary();
@@ -62,27 +61,14 @@ function matchesSearch(i,q){
   if(!nq)return true;
   if(i._search.includes(nq))return true;
   const number=nq.replace(/^#/,'');
-  if(/^\d+$/.test(number)){
-    return i.id.endsWith(number)||i.catalogNumber.includes('#'+number);
-  }
+  if(/^\d+$/.test(number)) return i.id.endsWith(number)||i.catalogNumber.includes('#'+number);
   return nq.split(/\s+/).every(term=>i._search.includes(term));
 }
 
 function render(){
   const q=searchInput.value;
-  const shown=items
-    .filter(i=>(activeCategory==='ALL'||i.category===activeCategory)&&matchesSearch(i,q))
-    .sort((a,b)=>{
-      const order={AVAILABLE:0,RESERVED:1,SOLD:2};
-      return (order[a.status]??9)-(order[b.status]??9)||a.id.localeCompare(b.id);
-    });
-
-  const availableShown=shown.filter(i=>i.status==='AVAILABLE').length;
-  resultsHeading.textContent=shown.every(i=>i.status==='AVAILABLE')?'Available':'Items';
-  resultCount.textContent=shown.length===items.length
-    ? availableShown+' available · '+shown.length+' total'
-    : shown.length+' '+(shown.length===1?'item':'items');
-
+  const shown=items.filter(i=>(activeCategory==='ALL'||i.category===activeCategory)&&matchesSearch(i,q));
+  resultCount.textContent=shown.length+' '+(shown.length===1?'item':'items');
   grid.innerHTML=shown.length?shown.map(card).join(''):'<div class="empty">No items match your search.</div>';
   grid.querySelectorAll('.card').forEach(el=>el.addEventListener('click',()=>openItem(el.dataset.id)));
 }
@@ -116,7 +102,7 @@ function openItem(iid){
 
 async function shareItem(i){
   const text=i.catalogNumber+' — '+i.name+', size '+i.size+', '+money(i.price)+' · Kraków';
-  if(navigator.share){try{await navigator.share({title:i.name,text,url:location.href});return}catch(e){}}
+  if(navigator.share){try{await navigator.share({title:i.name,text:text,url:location.href});return}catch(e){}}
   await navigator.clipboard.writeText(text+' '+location.href);
   const b=document.querySelector('#shareItem');
   b.textContent='Copied';
