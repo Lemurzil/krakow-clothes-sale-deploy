@@ -63,10 +63,10 @@ body{overflow-x:hidden}.card{min-width:0}.meta{white-space:nowrap;overflow:hidde
   font-size:15px;
   line-height:1.45;
 }
-.catalog-head{padding-top:24px}
 
 @media(max-width:520px){
   .hero.compact-original-hero{padding:28px 18px 24px}
   .hero.compact-original-hero h1{font-size:42px}
   .hero-summary{font-size:13px;margin-top:9px}
 }
+
